@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Application VI — Frontend</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chat Application VI</h1>
+    <p class="subtitle">Frontend demo — no backend required</p>
+  </header>
+
+  <main class="app">
+    <section class="chat-area">
+      <div class="chat-header">
+        <div class="user-info">
+          <span id="usernameDisplay">User</span>
+        </div>
+        <div class="controls">
+          <input id="usernameInput" placeholder="Set name (press Enter)" maxlength="20" />
+        </div>
+      </div>
+
+      <div id="chatBox" class="chat-box" aria-live="polite"></div>
+
+      <div class="input-area">
+        <input id="messageInput" type="text" placeholder="Type a message and press Enter or Send" autocomplete="off" />
+        <button id="sendBtn" class="btn">Send</button>
+        <button id="clearBtn" class="btn ghost">Clear</button>
+      </div>
+    </section>
+
+    <aside class="instructions">
+      <h2>How to demo</h2>
+      <ol>
+        <li>Set your display name in the top-right input (optional).</li>
+        <li>Type a message and press <strong>Enter</strong> or click <strong>Send</strong>.</li>
+        <li>The app shows your message and a simulated reply (bot) after a short delay.</li>
+        <li>Use <strong>Clear</strong> to clear the chat area.</li>
+      </ol>
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive layout</li>
+        <li>Message timestamps</li>
+        <li>Auto-scroll and keyboard support</li>
+        <li>Light-accessible color contrast</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Chat Application VI</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
